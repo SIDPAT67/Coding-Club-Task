@@ -147,8 +147,9 @@ class LoginMenu(Menu):
 
     def process_input(self, manager, option):
         if option == 1:
-            input("Enter student id: ")
-            input("Enter name: ")
+            input("Enter Student id: ")
+            user_name = input("Enter Name: ")
+            print("Welcome User, you are logged in as " + user_name)
             manager.change_menu(MainMenu())
 
         if option == 2:
